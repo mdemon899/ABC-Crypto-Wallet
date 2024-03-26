@@ -1,0 +1,95 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Common Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Exo", sans-serif; */
+    /* font-family: "Inter", sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+/* Header Section Start */
+
+
+.navbar-brand span {
+    color: #5B46F6;
+}
+
+.navbar-brand {
+    color: #262626;
+    font-size: 22px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #262626;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+
+#header_btn button {
+    border-radius: 8px;
+    padding: 9px 22px;
+    margin-right: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+
+#sign_in_btn {
+    background: none;
+    border: 1px solid #5B46F6 !important;
+    transition: all 0.5s ease;
+}
+
+#sign_in_btn:hover {
+    color: #fff;
+    background: #5B46F6;
+}
+
+#sign_up_btn {
+    background: #5B46F6;
+    transition: background 0.5s ease;
+    color: #fff;
+}
+
+#sign_up_btn:hover {
+    background: #5b46f6d5;
+}
+
+.navbar-toggler {
+    background: #5B46F6;
+}
