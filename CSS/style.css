@@ -85,13 +85,103 @@ button {
     display: none;
     font-size: 2rem;
     color: #5B46F6;
+    cursor: pointer;
 }
 
 /* Header Section End */
 
+/* Hero Section Start */
+#hero_section {
+    padding: 6rem;
+    font-family: "Inter", sans-serif;
+}
 
+#hero_section p {
+    color: #FD8D1E;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#hero_section h2 {
+    color: #1D2D3F;
+    font-size: 4rem;
+    max-width: 650px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#hero_section h3 {
+    color: #848484;
+    font-size: 1.1rem;
+    line-height: 2;
+    max-width: 500px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#hero_section form {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#hero_section form input {
+    width: fit-content;
+    background: transparent;
+    border: none;
+    padding: 35px;
+    outline: none;
+    width: 60%;
+    font-size: 1rem;
+}
+
+#hero_section form button {
+    padding: 15px 40px;
+    background: #5B46F6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Hero Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Quires Start*/
 @media (max-width: 850px) {
 
+    /* Header Section Start */
     #navbar .fa-bars,
     .links .fa-xmark {
         display: block;
@@ -111,7 +201,7 @@ button {
     .links {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         background: #2C40F2BF;
         top: 0;
         right: 0;
@@ -123,7 +213,7 @@ button {
     }
 
     .links a,
-    button {
+    .links button {
         margin-top: 3rem;
         color: #fff;
     }
@@ -137,7 +227,35 @@ button {
         color: #ebe8e8d5;
     }
 
-    button {
+    .links button {
         width: 200px;
     }
+
+    /* Header Section End */
+
+    /* Hero Section Start */
+    #hero_section p {
+        font-size: 1rem;
+    }
+
+    #hero_section h2 {
+        font-size: 2.5rem;
+        max-width: 420px;
+    }
+
+    #hero_section h3 {
+        color: #848484;
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    #hero_section form {
+        max-width: 400px;
+        gap: 15px;
+    }
+
+    /* Hero Section End */
+
 }
+
+/* Media Quires End*/
