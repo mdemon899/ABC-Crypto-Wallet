@@ -141,13 +141,68 @@ button {
 
 #hero_section form button {
     padding: 15px 40px;
-    background: #5B46F6;
+    background-color: #5B46F6;
     color: #fff;
     border: none;
     border-radius: 8px;
+    transition: background-color 0.4s ease;
+}
+
+#hero_section form button:hover {
+    background-color: #4635C4;
 }
 
 /* Hero Section End */
+
+/* Globe Section Start */
+
+#globe_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Inter, sans-serif;
+}
+
+#globe_section img {
+    max-width: 450px;
+}
+
+#globe_section p {
+    color: #FD8D1E;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#globe_section h2 {
+    color: #1D2D3F;
+    font-size: 3rem;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#globe_section h3 {
+    color: #848484;
+    font-size: 1rem;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#globe_section button {
+    padding: 15px 40px;
+    background-color: #468CF6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.4s ease;
+}
+
+#globe_section button:hover {
+    background-color: #6AA9FF;
+}
+
+/* Globe Section End */
 
 
 
@@ -255,6 +310,28 @@ button {
     }
 
     /* Hero Section End */
+
+    /* Globe Section Start */
+
+    #globe_section {
+        flex-direction: column-reverse;
+    }
+
+    #globe_section p {
+        font-size: 0.9rem;
+    }
+
+    #globe_section h2 {
+        font-size: 2.5rem;
+        max-width: 420px;
+    }
+
+    #globe_section h3 {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    /* Globe Section End */
 
 }
 
