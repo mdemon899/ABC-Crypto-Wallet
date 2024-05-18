@@ -221,7 +221,8 @@ button {
 #services_section {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 6rem;
+    gap: 30px;
+    padding: 3rem 3rem 6rem 3rem;
 }
 
 #services_section .left_section h2 {
@@ -262,7 +263,7 @@ button {
 /* Features Section Start */
 
 #features_section {
-    padding-bottom: 6rem;
+    padding: 3rem 3rem 6rem 3rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -375,7 +376,7 @@ button {
 /* Blog Section Start */
 
 #blog_section {
-    padding: 6rem;
+    padding-block: 6rem;
 }
 
 #blog_section .blog_header {
@@ -400,9 +401,12 @@ button {
 .blog_inner_container {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5rem;
+    gap: 1rem;
 }
 
 .blog_inner_container .box img {
+    max-width: 250px;
     padding: 20px 30px;
     border-radius: 15px;
     background-color: #1E1E1E;
@@ -433,6 +437,64 @@ button {
 }
 
 /* Blog Section End */
+
+/* Contact Section Start */
+#contact_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 6rem 0;
+}
+
+#contact_section h2 {
+    color: #1D2D3F;
+    font-size: 3rem;
+    margin-top: 20px;
+
+}
+
+#contact_section #getInTouch {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 1rem;
+    width: 520px;
+}
+
+#contact_section #getInTouch input,
+#contact_section #getInTouch textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #7B838F;
+    outline: none;
+    font-size: 1rem;
+}
+
+#contact_section #getInTouch textarea {
+    height: 180px;
+    resize: none;
+}
+
+#contact_section #getInTouch button {
+    color: #fff;
+    background-color: #5B46F6;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#contact_section #getInTouch button:hover {
+    background-color: #4635C4;
+}
+
+/* Contact Section End */
 
 
 
@@ -574,11 +636,15 @@ button {
         grid-template-columns: repeat(2, 265px);
     }
 
+    #services_section .left_section h2 {
+        font-size: 2.5rem;
+    }
+
     /* Services Section End */
 
     /* Features Section Start */
     #features_section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
@@ -604,6 +670,23 @@ button {
     }
 
     /* Testimonial Section End */
+
+    /* Blog Section Start */
+    .blog_inner_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .blog_inner_container .box img {
+        max-width: 350px;
+    }
+
+    #blog_section .blog_header h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Blog Section End */
 
 }
 
