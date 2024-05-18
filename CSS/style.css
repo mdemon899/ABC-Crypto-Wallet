@@ -372,6 +372,68 @@ button {
 
 /* Testimonial Section End */
 
+/* Blog Section Start */
+
+#blog_section {
+    padding: 6rem;
+}
+
+#blog_section .blog_header {
+    text-align: center;
+}
+
+#blog_section .blog_header p {
+    color: #FD8D1E;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+#blog_section .blog_header h2 {
+    font-size: 3rem;
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    color: #1D2D3F;
+}
+
+.blog_inner_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog_inner_container .box img {
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: #1E1E1E;
+}
+
+.blog_inner_container .box .text_container h3 {
+    color: #1D2D3F;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.blog_inner_container .box .text_container p {
+    color: #848484;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    max-width: 250px;
+}
+
+.blog_inner_container .box .text_container a {
+    color: #FD8D1E;
+    border-bottom: 2px solid #FD8D1E;
+    transition: color 0.4s ease;
+}
+
+.blog_inner_container .box .text_container a:hover {
+    color: #D5770E;
+}
+
+/* Blog Section End */
+
 
 
 
