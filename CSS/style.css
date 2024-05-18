@@ -262,7 +262,7 @@ button {
 /* Features Section Start */
 
 #features_section {
-    padding: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
