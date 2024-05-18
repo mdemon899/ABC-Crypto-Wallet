@@ -10,6 +10,7 @@
 
 body {
     min-height: 100vh;
+    font-family: "Inter", sans-serif;
 }
 
 a {
@@ -26,6 +27,34 @@ button {
     cursor: pointer;
 }
 
+.dark_button {
+    padding: 15px 40px;
+    background-color: #5B46F6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.dark_button:hover {
+    background-color: #4635C4;
+}
+
+.light_button {
+    padding: 15px 40px;
+    background-color: #468CF6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.4s ease;
+}
+
+.light_button:hover {
+    background-color: #6AA9FF;
+}
+
 /* Header Section Start */
 #header_section {
     padding: 1.5rem 6rem;
@@ -34,7 +63,6 @@ button {
 .links a {
     margin-inline: 1rem;
     color: #353535;
-    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     transition: color ease 0.4s;
@@ -93,7 +121,6 @@ button {
 /* Hero Section Start */
 #hero_section {
     padding: 6rem;
-    font-family: "Inter", sans-serif;
 }
 
 #hero_section p {
@@ -154,62 +181,46 @@ button {
 
 /* Hero Section End */
 
-/* Globe Section Start */
+/* About Section Start */
 
-#globe_section {
+#about_section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: Inter, sans-serif;
     margin-bottom: 6rem;
 }
 
-#globe_section img {
+#about_section img {
     max-width: 450px;
 }
 
-#globe_section p {
+#about_section p {
     color: #FD8D1E;
     font-size: 1rem;
     margin-top: 20px;
     font-weight: 600;
 }
 
-#globe_section h2 {
+#about_section h2 {
     color: #1D2D3F;
     font-size: 3rem;
     max-width: 500px;
     margin-top: 20px;
 }
 
-#globe_section h3 {
+#about_section h3 {
     color: #848484;
     font-size: 1rem;
     max-width: 500px;
     margin-top: 20px;
 }
 
-#globe_section button {
-    padding: 15px 40px;
-    background-color: #468CF6;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: background-color 0.4s ease;
-}
-
-#globe_section button:hover {
-    background-color: #6AA9FF;
-}
-
-/* Globe Section End */
+/* About Section End */
 
 /* Services Section Start */
 #services_section {
     display: flex;
     justify-content: space-evenly;
-    font-family: Inter, sans-serif;
     padding-bottom: 6rem;
 }
 
@@ -225,20 +236,6 @@ button {
     max-width: 400px;
     margin-bottom: 20px;
     color: #848484;
-}
-
-#services_section .left_section button {
-    padding: 15px 40px;
-    background-color: #5B46F6;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: background-color 0.4s ease;
-}
-
-#services_section .left_section button:hover {
-    background-color: #4635C4;
 }
 
 #services_section .right_section {
@@ -261,6 +258,44 @@ button {
 }
 
 /* Services Section End */
+
+/* Features Section Start */
+
+#features_section {
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#features_section .left_section p {
+    color: #FD8D1E;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#features_section .left_section h2 {
+    color: #1D2D3F;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+#features_section .left_section h3 {
+    color: #848484;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+#features_section .right_section img {
+    max-width: 400px;
+}
+
+
+/* Features Section End */
 
 
 
@@ -369,27 +404,27 @@ button {
 
     /* Hero Section End */
 
-    /* Globe Section Start */
+    /* About Section Start */
 
-    #globe_section {
+    #about_section {
         flex-direction: column-reverse;
     }
 
-    #globe_section p {
+    #about_section p {
         font-size: 0.9rem;
     }
 
-    #globe_section h2 {
+    #about_section h2 {
         font-size: 2.5rem;
         max-width: 420px;
     }
 
-    #globe_section h3 {
+    #about_section h3 {
         font-size: 1rem;
         max-width: 400px;
     }
 
-    /* Globe Section End */
+    /* About Section End */
 
     /* Services Section Start */
     #services_section {
@@ -403,6 +438,28 @@ button {
     }
 
     /* Services Section End */
+
+    /* Features Section Start */
+    #features_section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #features_section .left_section h2 {
+        font-size: 2.5rem;
+        max-width: 420px;
+    }
+
+    #features_section .left_section h3 {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    #features_section .left_section p {
+        font-size: 0.9rem;
+    }
+
+    /* Features Section End */
 
 }
 
