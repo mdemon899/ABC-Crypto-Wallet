@@ -157,7 +157,6 @@ button {
 }
 
 #hero_section form input {
-    width: fit-content;
     background: transparent;
     border: none;
     padding: 35px;
@@ -498,9 +497,9 @@ button {
 
 /* Footer Section Start */
 #footer_section {
-    padding: 3rem 5rem;
+    padding: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #F3F5F6;
 }
 
@@ -572,36 +571,9 @@ button {
 /* Footer Section End */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Quires Start*/
-@media (max-width: 850px) {
+
+@media (max-width: 920px) {
 
     /* Header Section Start */
     #navbar .fa-bars,
@@ -762,6 +734,413 @@ button {
     }
 
     /* Blog Section End */
+
+    /* Footer Section Start */
+    #footer_section {
+        flex-direction: column;
+    }
+
+    #footer_section .child {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer Section End */
+}
+
+@media (max-width: 568px) {
+
+    /* Hero Section Start */
+    #hero_section p {
+        font-size: 0.9rem;
+    }
+
+    #hero_section h2 {
+        font-size: 2rem;
+        max-width: 420px;
+    }
+
+    #hero_section h3 {
+        font-size: 0.9rem;
+        max-width: 350px;
+    }
+
+    #hero_section form input {
+        padding: 25px;
+    }
+
+    #hero_section form button {
+        padding: 15px 25px;
+    }
+
+    /* Hero Section End */
+
+    /* About Section Start */
+
+    #about_section {
+        flex-direction: column;
+    }
+
+    #about_section p {
+        font-size: 0.8rem;
+    }
+
+    #about_section h2 {
+        font-size: 1.5rem;
+        max-width: 350px;
+    }
+
+    #about_section h3 {
+        font-size: 0.9rem;
+        max-width: 320px;
+    }
+
+    .light_button {
+        padding: 13px 25px;
+    }
+
+    .dark_button {
+        padding: 13px 25px;
+    }
+
+    #about_section img {
+        max-width: 350px;
+    }
+
+    /* About Section End */
+
+    /* Services Section Start */
+    #services_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    #services_section .right_section {
+        grid-template-columns: repeat(1, 265px);
+        gap: 3rem;
+    }
+
+    #services_section .left_section h2 {
+        font-size: 2rem;
+    }
+
+    #services_section .left_section h3 {
+        max-width: 320px;
+    }
+
+    /* Services Section End */
+
+    /* Features Section Start */
+
+    #features_section .left_section p {
+        font-size: 0.8rem;
+    }
+
+    #features_section .left_section h2 {
+        font-size: 2rem;
+    }
+
+    #features_section .left_section h3 {
+        font-size: 0.9rem;
+        max-width: 350px;
+    }
+
+    /* Features Section End */
+
+    /* Testimonial Section Start */
+
+    #testimonial_section {
+        padding: 3rem;
+    }
+
+    #testimonial_section h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial_inner_section .container .text_img_container {
+        gap: 0.7rem;
+    }
+
+    .testimonial_inner_section .container .text_img_container h4 {
+        font-size: 1rem;
+    }
+
+    .testimonial_inner_section .container p {
+        font-size: 0.8rem;
+    }
+
+    .testimonial_inner_section .container h3 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial_inner_section {
+        flex-direction: column;
+    }
+
+    /* Testimonial Section End */
+
+    /* Blog Section Start */
+
+    .blog_inner_container .box img {
+        max-width: 300px;
+    }
+
+    #blog_section .blog_header h2 {
+        font-size: 2rem;
+    }
+
+    /* Blog Section End */
+
+    /* Contact Section Start */
+    #contact_section #getInTouch {
+        width: 300px;
+    }
+
+    /* Contact Section End */
+
+    /* Footer Section Start */
+    #footer_section {
+        flex-direction: column;
+    }
+
+    #footer_section .child {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer Section End */
+
+}
+
+@media (max-width: 400px) {
+
+    /* Hero Section Start */
+    .logo {
+        font-size: 1rem;
+    }
+
+    #navbar .fa-bars,
+    .links .fa-xmark {
+        font-size: 1rem;
+    }
+
+    #hero_section {
+        padding: 2rem;
+    }
+
+    #hero_section p {
+        font-size: 0.7rem;
+    }
+
+    #hero_section h2 {
+        font-size: 1rem;
+        max-width: 250px;
+    }
+
+    #hero_section h3 {
+        font-size: 0.7rem;
+        max-width: 225px;
+    }
+
+    #hero_section form input {
+        padding: 20px;
+    }
+
+    #hero_section form {
+        width: 250px;
+        gap: 15px;
+    }
+
+    #hero_section form button {
+        padding: 12px 15px;
+    }
+
+    /* Hero Section End */
+
+    /* About Section Start */
+    #about_section {
+        padding: 2rem;
+    }
+
+    #about_section p {
+        font-size: 0.6rem;
+    }
+
+    #about_section h2 {
+        font-size: 1rem;
+        max-width: 300px;
+    }
+
+    #about_section h3 {
+        font-size: 0.7rem;
+        max-width: 350px;
+    }
+
+    .light_button {
+        padding: 12px 18px;
+    }
+
+    .dark_button {
+        padding: 12px 18px;
+    }
+
+    #about_section img {
+        max-width: 250px;
+    }
+
+    /* About Section End */
+
+    /* Services Section Start */
+
+    #services_section .right_section {
+        grid-template-columns: repeat(1, 200px);
+        gap: 2rem;
+    }
+
+    #services_section .left_section h2 {
+        font-size: 1rem;
+    }
+
+    #services_section .left_section h3 {
+        font-size: 0.7rem;
+        max-width: 300px;
+        margin-bottom: 0px;
+    }
+
+    /* Services Section End */
+
+    /* Features Section Start */
+    #features_section .right_section img {
+        max-width: 250px;
+    }
+
+    #features_section .left_section p {
+        font-size: 0.6rem;
+    }
+
+    #features_section .left_section h2 {
+        font-size: 1rem;
+    }
+
+    #features_section .left_section h3 {
+        font-size: 0.7rem;
+        max-width: 260px;
+    }
+
+    /* Features Section End */
+
+    /* Testimonial Section Start */
+
+    #testimonial_section {
+        padding: 2rem;
+    }
+
+    #testimonial_section h2 {
+        font-size: 1rem;
+    }
+
+    .testimonial_inner_section .container .text_img_container {
+        gap: 0.6rem;
+    }
+
+    .testimonial_inner_section .container .text_img_container h4 {
+        font-size: 0.7rem;
+    }
+
+    .testimonial_inner_section .container p {
+        font-size: 0.6rem;
+    }
+
+    .testimonial_inner_section .container h3 {
+        font-size: 0.8rem;
+    }
+
+    /* Testimonial Section End */
+
+    /* Blog Section Start */
+
+    .blog_inner_container .box img {
+        max-width: 250px;
+    }
+
+    #blog_section .blog_header p {
+        font-size: 0.8rem;
+    }
+
+    #blog_section .blog_header h2 {
+        font-size: 1rem;
+    }
+
+    .blog_inner_container .box .text_container h3 {
+        font-size: 1rem;
+    }
+
+    .blog_inner_container .box .text_container p {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        max-width: 200px;
+    }
+
+    .blog_inner_container .box .text_container a {
+        border-bottom: 1px solid #FD8D1E;
+        font-size: 0.7rem;
+    }
+
+    /* Blog Section End */
+
+    /* Contact Section Start */
+    #contact_section h2 {
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+
+    #contact_section #getInTouch {
+        width: 280px;
+    }
+
+    #contact_section #getInTouch button {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* Contact Section End */
+
+    /* Footer Section Start */
+
+    .footer_logo {
+        font-size: 1rem;
+    }
+
+    #footer_section .footer_logo_container .footer_des {
+        font-size: 0.8rem;
+    }
+
+    #footer_section .footer_logo_container .copyright {
+        font-size: 0.8rem;
+    }
+
+    #footer_section .child h3 {
+        font-size: 1rem;
+    }
+
+    #footer_section .child a {
+        font-size: 0.8rem;
+    }
+
+    #footer_section .child {
+        margin-bottom: 1.5rem;
+    }
+
+    #footer_section .footer_form_container p {
+        font-size: 0.8rem;
+        max-width: 200px;
+    }
+
+    #footer_section .footer_form_container input {
+        padding: 0.9rem;
+        width: 200px;
+    }
+
+    /* Footer Section End */
 
 }
 
